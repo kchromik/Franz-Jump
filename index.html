@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Franz Jump - Das Dackel Abenteuer</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <div class="game-container">
+        <h1>Franz Jump <i class="fas fa-dog"></i></h1>
+        <div class="canvas-container">
+            <canvas id="gameCanvas"></canvas>
+        </div>
+        <div class="game-info">
+            <div class="game-stats">
+                <h3>PUNKTE</h3>
+                <p id="score">0</p>
+            </div>
+            <div class="game-stats">
+                <h3>HIGHSCORE</h3>
+                <p id="highscore">0</p>
+            </div>
+            <div class="game-stats">
+                <h3>LEVEL</h3>
+                <p id="level">1</p>
+            </div>
+        </div>
+        <div class="controls">
+            <p><i class="fas fa-keyboard"></i> Steuerung: <kbd>←</kbd> <kbd>→</kbd> zum Bewegen, <kbd>↑</kbd> zum Springen</p>
+            <button id="startButton"><i class="fas fa-play"></i> Spiel starten</button>
+            <button id="muteButton"><i class="fas fa-volume-up"></i></button>
+        </div>
+        <div id="powerUpIndicator" class="power-up-indicator hidden">
+            <div class="power-up-icon"><i class="fas fa-bolt"></i></div>
+            <div class="power-up-timer"></div>
+        </div>
+    </div>
+    <script src="game.js"></script>
+</body>
+</html>
